@@ -1,0 +1,48 @@
+/* Define colors for AWS and OpenStack */
+.awscolor {
+    background-color: #FF9900; /* AWS Orange color */
+    color: #FFFFFF; /* White text color */
+}
+
+.openstackcolor {
+    background-color: #ED1844; /* OpenStack Orange color */
+    color: #FFFFFF; /* White text color */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 2px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+body {
+    background-color: #DBF9FC;
+    }
+/* Apply AWS and OpenStack colors to specific rows */
+table tr:nth-child(odd) {
+    background-color: #F5F5F5; /* Light gray for odd rows */
+}
+
+table tr:nth-child(even) {
+    background-color: #FFFFFF; /* White for even rows */
+}
+
+/* Add AWS and OpenStack classes to specific table cells */
+.awscolor th, .awscolor td {
+    background-color: #FF9900;
+    color: #FFFFFF;
+}
+
+.openstackcolor th, .openstackcolor td {
+    background-color: #ED1844;
+    color: #FFFFFF;
+}

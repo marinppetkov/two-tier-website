@@ -1,0 +1,5 @@
+# Use the official PHP Apache base image
+FROM php:8.0.30-apache-bullseye
+# Install the MySQL extension
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+# COPY ../webfiles /var/www/html/

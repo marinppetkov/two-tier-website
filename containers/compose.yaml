@@ -1,0 +1,23 @@
+services:
+  web:
+    build:
+      dockerfile: web_dockerfile
+    container_name: web
+    ports:
+      - "8080:80"
+    volumes:
+      - ../webfiles:/var/www/html
+    networks:
+      - web-net
+  database:
+    image: mysql:8.0.35-debian
+    container_name: database
+    volumes:
+      - ../dbfiles/web.sql:/docker-entrypoint-initdb.d/web.sql
+    environment:
+      - MYSQL_ROOT_PASSWORD=Password123
+    networks:
+      - web-net
+networks:
+  web-net:
+    driver: bridge
