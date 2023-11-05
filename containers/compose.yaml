@@ -14,8 +14,8 @@ services:
     container_name: database
     volumes:
       - ../dbfiles/web.sql:/docker-entrypoint-initdb.d/web.sql
-        #environment:
-      #  - MYSQL_ROOT_PASSWORD=Password123
+    environment:
+      - MYSQL_ROOT_PASSWORD=Password123
     networks:
       - web-net
 networks:

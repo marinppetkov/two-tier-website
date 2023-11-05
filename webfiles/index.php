@@ -50,6 +50,10 @@
         </section>
         <footer>
             <p>&copy; Demo two tier website</p>
+            <?php
+            echo $_SERVER['SERVER_NAME'];
+            echo $_SERVER['SERVER_ADDR']; 
+            ?>
         </footer>
     </body>
     </html>
