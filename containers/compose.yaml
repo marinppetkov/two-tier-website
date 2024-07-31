@@ -10,7 +10,7 @@ services:
     networks:
       - web-net
   database:
-    image: mysql:8.0.35-debian
+    image: mysql:8.4.2
     container_name: database
     volumes:
       - ../dbfiles/web.sql:/docker-entrypoint-initdb.d/web.sql
